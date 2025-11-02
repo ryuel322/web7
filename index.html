@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Assignment</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+
+    #box, #seqBox, #comboBox {
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    #box { background: red; }
+    #seqBox { background: green; }
+    #comboBox { background: orange; }
+
+    #panel {
+      display: none;
+      background: lightblue;
+      padding: 10px;
+      width: fit-content;
+    }
+
+    .gallery {
+      margin-top: 20px;
+    }
+
+    .thumb {
+      width: 100px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #large {
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="mainTitle">Hello</h1>
+  <p class="description">This is a paragraph.</p>
+  <div>Default text</div>
+
+  <hr>
+  <h2>Task 2 – Visibility</h2>
+  <p id="text">Hello! I'm visible.</p>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+  <button id="toggle">Toggle</button>
+
+  <hr>
+  <h2>Task 3 – Fade</h2>
+  <img id="pic" src="gleb.jpg" alt="img">
+  <br>
+  <button id="fadeOut">Fade Out</button>
+  <button id="fadeIn">Fade In</button>
+  <button id="fadeToggle">Fade Toggle</button>
+
+  <hr>
+  <h2>Task 4 – Slide</h2>
+  <button id="slideDownBtn">Slide Down</button>
+  <button id="slideUpBtn">Slide Up</button>
+  <button id="slideToggleBtn">Toggle Panel</button>
+  <div id="panel">Collapsible content</div>
+
+  <hr>
+  <h2>Task 5 – Add & Remove</h2>
+  <ul id="list"><li>Item 1</li></ul>
+  <button id="add">Add Item</button>
+  <button id="remove">Remove Item</button>
+
+  <hr>
+  <h2>Task 6 – Modify Attributes</h2>
+  <img id="myImg" src="ava.jpg">
+  <a id="myLink" href="https://google.com" target="_blank">Google</a><br>
+  <button id="changeImg">Change Image</button>
+  <button id="changeLink">Change Link</button>
+
+  <hr>
+  <h2>Task 7 – Form Interaction</h2>
+  <form>
+    Name: <input type="text" id="name"><br>
+    Email: <input type="email" id="email"><br>
+  </form>
+  <p id="output"></p>
+
+  <hr>
+  <h2>Task 8–10 – Animations</h2>
+  <button id="animateBtn">Animate</button>
+  <div id="box"></div>
+
+  <button id="seqBtn">Start Sequence</button>
+  <div id="seqBox"></div>
+
+  <button id="comboBtn">Animate Combo</button>
+  <div id="comboBox"></div>
+
+  <hr>
+  <h2>Task 11 – Mini Project: Image Gallery</h2>
+  <div class="gallery">
+    <img class="thumb" src="avam.jpg" alt="1">
+    <img class="thumb" src="avamm.jpg" alt="2">
+    <img class="thumb" src="133.jpg" alt="3">
+  </div>
+  <img id="large" src="https://via.placeholder.com/300" alt="large">
+
+</body>
+</html>
+
